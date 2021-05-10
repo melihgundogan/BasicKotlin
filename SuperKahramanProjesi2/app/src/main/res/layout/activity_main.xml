@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/isimText"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="36dp"
+        android:ems="10"
+        android:hint="Super Kahraman İsmi"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/yasText"
+        app:layout_constraintEnd_toEndOf="@+id/yasText"
+        app:layout_constraintStart_toStartOf="@+id/yasText"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/meslekText"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginBottom="30dp"
+        android:ems="10"
+        android:hint="Super Kahraman Meslek"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/yasText" />
+
+    <EditText
+        android:id="@+id/yasText"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:ems="10"
+        android:hint="Super Kahraman Yaş"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/meslekText"
+        app:layout_constraintEnd_toEndOf="@+id/meslekText"
+        app:layout_constraintStart_toStartOf="@+id/meslekText"
+        app:layout_constraintTop_toBottomOf="@+id/isimText" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="48dp"
+        android:layout_marginBottom="35dp"
+        android:onClick="superKahramanYap"
+        android:text="Super Kahraman Oluştur"
+        app:layout_constraintBottom_toTopOf="@+id/sonucText"
+        app:layout_constraintEnd_toEndOf="@+id/meslekText"
+        app:layout_constraintTop_toBottomOf="@+id/meslekText" />
+
+    <TextView
+        android:id="@+id/sonucText"
+        android:layout_width="314dp"
+        android:layout_height="71dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginBottom="269dp"
+        android:text="İsim: Yaş: Meslek:"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button" />
+</androidx.constraintlayout.widget.ConstraintLayout>
